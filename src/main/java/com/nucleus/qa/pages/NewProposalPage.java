@@ -32,6 +32,8 @@ public class NewProposalPage extends TestBase{
 	WebElement EnterPostalCode;
 	@FindBy (xpath ="//button[contains(text(),'Find Address')][1]")
 	WebElement ClickOnFindAddress;
+	@FindBy (xpath ="//ul[@id='residential']//li[1]")
+	WebElement SelectFirstAddress;
 	
 	//Enter Manually Address if not search in the postal code box
 	@FindBy (xpath ="//span[contains(text(),'Enter address manually')][1]")
@@ -94,5 +96,57 @@ public class NewProposalPage extends TestBase{
 	
 	public NewProposalPage() {
 		PageFactory.initElements(driver, this);
+	}
+	
+	public void LimitedCompanyClick() {
+		CompanyType.click();
+	}
+	public void SearchCompanyName(String Name) {
+		SearchCompanyName.sendKeys(Name);
+	}
+	public void SelectCompanyName() {
+		CompanyName.click();
+	}
+	public void PrimaryDirector() {
+		PrimaryDirector.click();
+	}
+	public void Email(String Email) {
+		EnterEmail.sendKeys(Email);
+	}
+	public void Phone(String Phone) {
+		EnterPhone.sendKeys(Phone);
+	}
+	public void Mobile(String Mobile) {
+		EnterMobile.sendKeys(Mobile);
+	}
+	public void BirthDay(String BirthDay) {
+		EnterBirthDay.sendKeys(BirthDay);
+	}
+	public void BirthMonth(String BirthMonth) {
+		EnterBirthMonth.sendKeys(BirthMonth);
+	}
+	public void BirthYear(String BirthYear) {
+		EnterBirthYear.sendKeys(BirthYear);
+	}
+	public void PostCode(String PostCode) {
+		EnterPostalCode.sendKeys(PostCode);
+	}
+	public void FindAddressClick() {
+		ClickOnFindAddress.click();
+	}
+	public void SelectAddress() {
+		SelectFirstAddress.click();
+	}
+	public void SelectResidentialPropertyYes() {
+		SelectResidentialPropertyYes.click();
+	}
+	public void SelectResidentialPropertyNo() {
+		SelectResidentialPropertyNo.click();
+	}
+	public void SelectTradingAddress() {
+		SelectTradingAddressYes.click();
+	}
+	public void NextButton() {
+		NextStepBtn.click();
 	}
 }
