@@ -32,5 +32,6 @@ public class LoginTestCase extends TestBase {
 		String Password = "qatest@123";
 		Url();
 		loginPage.Login(Username, Password);
+		driver.close();
 	}
 }

@@ -27,14 +27,12 @@ public class NewProposalTestCase extends TestBase {
 		
 	}
 	@Test (priority = 0)
-	public void NCFPortalLoginTC() {
+	public void CreateNewProposal() {
 		String Username = "raja.singareddy@nucleus-cf.co.uk";
 		String Password = "qatest@123";
 		Url();
 		loginPage.Login(Username, Password);
-	}
-	@Test (priority = 1)
-	public void CreateNewProposal() {
 		homePage.ClickOnNewProposal();
 	}
+	 
 }

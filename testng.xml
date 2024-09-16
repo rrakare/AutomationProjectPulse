@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.nucleus.qa.testCases.LoginTestCase"/>
+      <!--class name="com.nucleus.qa.testCases.LoginTestCase"/-->
+      <class name="com.nucleus.qa.testCases.NewProposalTestCase"/>
       <class name="testng.NewTest"/>
     </classes>
   </test> <!-- Test -->
